@@ -1,27 +1,43 @@
-# NbaRoster
+# NBA.com/players Site Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+### _Created By_ **Joe Friesen**
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This application is an attempt to recreate the page https://www.nba.com/players using the Angular framework and data obtained from the stats.nba.com API. Submitted for Epicodus code review on 10/19/2018 and 10/26/2018.
 
-## Code scaffolding
+## Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://www.nba.com/players as it appeared on 10/19/2018
+![NBA.com/players](./src/assets/nba-players-screenshot.png)
 
-## Build
+## Technologies Employed
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* [stats.nba.com API](https://stats.nba.com)
+* Angular
+* Firebase
+* Webpack
+* HTML
+* JavaScript
+* CSS
 
-## Running unit tests
+## Installation Instructions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* *Clone this repository:*
+  * In terminal, enter the following:
+```
+$ cd ~/desktop
+$ git clone https://github.com/josephfriesen/nba-roster.git
+$ cd nba-roster
+```
+* *Build:*
+  * In terminal, enter
+```
+$ ng serve
+```
+* *Open:*
+  * In a browser, navigate to *localhost:4200/*
 
-## Running end-to-end tests
+### Legal
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2018 [Joseph Friesen](mailto:friesen.josephc@gmail.com)
