@@ -10,7 +10,7 @@ import { giannis, roster } from './models/ROSTER';
 export class AppComponent {
   title = 'app';
 
-  giannis: Player = giannis;
+  giannis: Player = giannis; // single player pulled from ROSTER for test purposes
   roster: Player[] = roster;
 
   log(arg): void {

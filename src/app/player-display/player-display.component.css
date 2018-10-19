@@ -1,0 +1,17 @@
+.player-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.num {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}

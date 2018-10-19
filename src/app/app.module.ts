@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SearchPanelComponent } from './search-panel/search-panel.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { NameFilterPipe } from './name-filter.pipe';
+import { PlayerDisplayComponent } from './player-display/player-display.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NameFilterPipe } from './name-filter.pipe';
     AppComponent,
     SearchPanelComponent,
     PlayerListComponent,
-    NameFilterPipe
+    NameFilterPipe,
+    PlayerDisplayComponent
   ],
   imports: [
     BrowserModule,
