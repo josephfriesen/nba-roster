@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Player } from './models/player.model';
+import { giannis } from './models/ROSTER';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  giannis: Player = giannis;
+
+  log(arg): void {
+    console.log(arg);
+  }
+
 }
