@@ -1,0 +1,35 @@
+.search-header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.search-bar-container {
+  padding: 8px;
+  background-color: #CCD0D3;
+  height: 40px;
+}
+
+.list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 30px);
+  border-bottom: 1px solid black;
+  height: 22.5px;
+  padding: 13px 15px;
+  background-color: white;
+}
+
+.search-bar {
+  width: calc(100% - 8px);
+  height: calc(100% - 6px);
+}
+
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+}

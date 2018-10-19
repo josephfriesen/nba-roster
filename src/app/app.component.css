@@ -1,0 +1,11 @@
+.body-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  width: 303px;
+  height: 100vh;
+  overflow: scroll;
+}

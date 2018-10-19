@@ -2,6 +2,26 @@
   font-size: 15px;
 }
 
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 30px);
+  border-bottom: 1px solid black;
+  height: 22.5px;
+  padding: 13px 15px;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
 .player-list-item {
   width: calc(100% - 30px);
   height: 22.5px;

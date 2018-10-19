@@ -1,6 +1,17 @@
-<div class="search-container">
-  <div class="search-bar">
-    <input type="text" [(ngModel)]="searchValue" name="name" placeholder="Search Player">
+<div class="search-header">
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <input type="text" [(ngModel)]="searchValue" name="name" placeholder="Search Player">
+    </div>
+  </div>
+  <div class="list-header">
+    <div>
+      <span *ngIf="!searchValue" class="header-text">PLAYER NAME</span>
+      <span *ngIf="searchValue" class="header-text">PLAYERS</span>
+    </div>
+    <div>
+      <span *ngIf="!searchValue" class="header-text">TEAM</span>
+    </div>
   </div>
 </div>
 
