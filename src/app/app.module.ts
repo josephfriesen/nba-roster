@@ -6,13 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SearchPanelComponent } from './search-panel/search-panel.component';
 import { PlayerListComponent } from './player-list/player-list.component';
+import { NameFilterPipe } from './name-filter.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchPanelComponent,
-    PlayerListComponent
+    PlayerListComponent,
+    NameFilterPipe
   ],
   imports: [
     BrowserModule,
