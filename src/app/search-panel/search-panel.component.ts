@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
+import { Player } from '../models/player.model';
 
 @Component({
   selector: 'search-panel',
@@ -13,5 +14,7 @@ export class SearchPanelComponent implements OnInit {
   }
 
   searchValue: string;
+
+  @Input() roster: Player[];
 
 }

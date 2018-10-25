@@ -14,27 +14,27 @@ export class PlayerListComponent implements OnInit {
 
   constructor(private playersService: PlayersService) { }
 
-  roster: Player[] = [];
+  @Input() roster: Player[];
 
   ngOnInit() {
-    // this.roster = this.playersService.getPlayers();
-    this.playersService.getPlayers()
-      .subscribe(array => {
-        array.forEach(data => {
-          const player = new Player(
-            data[12],
-            data[3],
-            data[13],
-            data[0],
-            data[14],
-            data[4],
-            data[5],
-            data[6],
-            data[7]
-          );
-          this.roster.push(player);
-        });
-      });
+
+    // this.playersService.getPlayers()
+    //   .subscribe(array => {
+    //     array.forEach(data => {
+    //       const player = new Player(
+    //         data[12],
+    //         data[3],
+    //         data[13],
+    //         data[0],
+    //         data[14],
+    //         data[4],
+    //         data[5],
+    //         data[6],
+    //         data[7]
+    //       );
+    //       this.roster.push(player);
+    //     });
+    //   });
 
   }
 

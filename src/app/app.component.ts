@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Player } from './models/player.model';
 import { giannis } from './models/ROSTER';
+import { PlayersService } from './players.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  providers: [PlayersService]
 })
 export class AppComponent {
   title = 'app';
@@ -13,6 +15,32 @@ export class AppComponent {
 
   log(arg): void {
     console.log(arg);
+  }
+
+  roster: Player[] = [];
+
+  constructor(private playersService: PlayersService) {
+    this.playersService.getPlayers()
+      .subscribe(array => {
+        array.forEach(data => {
+          const player = new Player(
+            data[12],
+            data[3],
+            data[13],
+            data[0],
+            data[14],
+            data[4],
+            data[5],
+            data[6],
+            data[7]
+          );
+          this.roster.push(player);
+        });
+      });
+  }
+
+  ngOnInit() {
+
   }
 
 }

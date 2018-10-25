@@ -11,11 +11,9 @@ export class PlayersService {
   }
 
   players: FirebaseListObservable<any[]>;
-  roster;
 
   getPlayers() {
     return this.players;
   }
-
 
 }
