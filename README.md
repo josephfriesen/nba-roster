@@ -14,8 +14,8 @@ https://www.nba.com/players as it appeared on 10/19/2018
 ## Technologies Employed
 
 * [stats.nba.com API](https://stats.nba.com)
-* Angular
-* Firebase
+* Angular 6
+* Firebase for hosting/database management
 * Webpack
 * HTML
 * JavaScript
