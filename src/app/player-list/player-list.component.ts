@@ -10,12 +10,34 @@ import { PlayersService } from '../players.service';
 })
 export class PlayerListComponent implements OnInit {
 
+  log(arg) {console.log(arg);}
+
   constructor(private playersService: PlayersService) { }
 
+  roster: Player[] = [];
+
   ngOnInit() {
+    // this.roster = this.playersService.getPlayers();
+    this.playersService.getPlayers()
+      .subscribe(array => {
+        array.forEach(data => {
+          const player = new Player(
+            data[12],
+            data[3],
+            data[13],
+            data[0],
+            data[14],
+            data[4],
+            data[5],
+            data[6],
+            data[7]
+          );
+          this.roster.push(player);
+        });
+      });
+
   }
 
-  roster: Player[] = this.playersService.getPlayers();
   @Input() filterByName: string;
 
 }
