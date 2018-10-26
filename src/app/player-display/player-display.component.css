@@ -16,3 +16,20 @@
 .bold {
   font-weight: bold;
 }
+
+.headshot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 175px;
+  /* border-radius: 50%;
+  border: 1px solid black; */
+  background-color: lightgrey;
+  clip-path: circle(45%);
+}
+
+.clipped {
+  height: 100%;
+  clip-path: circle(45%);
+}
