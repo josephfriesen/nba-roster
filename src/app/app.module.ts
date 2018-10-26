@@ -11,6 +11,7 @@ import { PlayerListComponent } from './player-list/player-list.component';
 import { NameFilterPipe } from './name-filter.pipe';
 import { PlayerDisplayComponent } from './player-display/player-display.component';
 import { AllPlayersComponent } from './all-players/all-players.component';
+import { PlayerStatsComponent } from './player-stats/player-stats.component';
 
 declare var require: any;
 
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     PlayerListComponent,
     NameFilterPipe,
     PlayerDisplayComponent,
-    AllPlayersComponent
+    AllPlayersComponent,
+    PlayerStatsComponent
   ],
   imports: [
     BrowserModule,

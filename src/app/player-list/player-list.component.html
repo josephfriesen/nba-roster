@@ -2,10 +2,10 @@
   <div class="player-list-item full-list-item" *ngFor="let player of roster">
     <div class="item-container">
       <div>
-        <a href="{{player.profileURL}}">{{player.name}}</a>
+        <a (click)="goToPlayer(player)">{{player.name}}</a>
       </div>
       <div>
-        {{player.teamAbr}}
+        <img class="team-thumb" src="{{player.teamImgURL}}">
       </div>
     </div>
   </div>
@@ -13,6 +13,6 @@
 
 <div class="filtered-player-list" *ngIf="filterByName">
   <div class="player-list-item filtered-list-item" *ngFor="let player of roster | nameFilter:filterByName">
-    <a href="{{player.profileURL}}">{{player.name}}</a>
+    <a (click)="goToPlayer(player)">{{player.name}}</a>
   </div>
 </div>

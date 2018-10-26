@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Player } from '../models/player.model';
 import { PlayersService } from '../players.service';
 
@@ -12,7 +13,7 @@ export class PlayerListComponent implements OnInit {
 
   log(arg) {console.log(arg);}
 
-  constructor(private playersService: PlayersService) { }
+  constructor(private router: Router, private playersService: PlayersService) { }
 
   @Input() roster: Player[];
 
@@ -21,5 +22,9 @@ export class PlayerListComponent implements OnInit {
   }
 
   @Input() filterByName: string;
+
+  goToPlayer(selectedPlayer: Player) {
+    this.router.navigate(['player', selectedPlayer.ID]);
+  }
 
 }

@@ -23,8 +23,6 @@
   align-items: center;
   width: 175px;
   height: 175px;
-  /* border-radius: 50%;
-  border: 1px solid black; */
   background-color: lightgrey;
   clip-path: circle(45%);
 }
