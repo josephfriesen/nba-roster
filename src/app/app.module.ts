@@ -12,6 +12,7 @@ import { NameFilterPipe } from './name-filter.pipe';
 import { PlayerDisplayComponent } from './player-display/player-display.component';
 import { AllPlayersComponent } from './all-players/all-players.component';
 import { PlayerStatsComponent } from './player-stats/player-stats.component';
+import { HttpModule } from '@angular/http';
 
 declare var require: any;
 
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
