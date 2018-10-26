@@ -1,4 +1,5 @@
 export class Player {
+  index: number;
   ID: number;
   name: string;
   lastNameFirstName: string;
@@ -12,7 +13,8 @@ export class Player {
   profileImgURL: string;
   teamImgURL: string;
 
-  constructor(id, name, lastName, teamID, teamAbr, jerseyNum, pos, height, weight) {
+  constructor(index, id, name, lastName, teamID, teamAbr, jerseyNum, pos, height, weight) {
+    this.index = index;
     this.ID = id;
     this.name = name;
     this.lastNameFirstName = lastName;

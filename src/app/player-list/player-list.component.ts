@@ -24,7 +24,7 @@ export class PlayerListComponent implements OnInit {
   @Input() filterByName: string;
 
   goToPlayer(selectedPlayer: Player) {
-    this.router.navigate(['player', selectedPlayer.ID]);
+    this.router.navigate(['player', selectedPlayer.index]);
   }
 
 }

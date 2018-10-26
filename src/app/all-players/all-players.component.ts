@@ -16,8 +16,9 @@ export class AllPlayersComponent implements OnInit {
   constructor(private playersService: PlayersService) {
     this.playersService.getPlayers()
       .subscribe(array => {
-        array.forEach(data => {
+        array.forEach((data,idx) => {
           const player = new Player(
+            idx,
             data[12],
             data[3],
             data[13],

@@ -13,28 +13,29 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 export class PlayerStatsComponent implements OnInit {
 
-  ID: number;
+  index: number
   player: Player;
 
   constructor(private playersService: PlayersService, private location: Location, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.ID = parseInt(urlParameters['ID']);
+      this.index = parseInt(urlParameters['ID']);
     })
-    this.playersService.playerLookup(this.ID).subscribe(data => {
-      console.log(data);
-        // this.player = new Player(
-        //   data[12],
-        //   data[3],
-        //   data[13],
-        //   data[0],
-        //   data[14],
-        //   data[4],
-        //   data[5],
-        //   data[6],
-        //   data[7]
-        // );
+    this.playersService.playerLookup(this.index).subscribe(data => {
+        this.player = new Player(
+          this.index,
+          data[this.index][12],
+          data[this.index][3],
+          data[this.index][13],
+          data[this.index][0],
+          data[this.index][14],
+          data[this.index][4],
+          data[this.index][5],
+          data[this.index][6],
+          data[this.index][7]
+        );
+        console.log(this.player);
       });
   }
 
