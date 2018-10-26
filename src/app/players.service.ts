@@ -16,4 +16,8 @@ export class PlayersService {
     return this.players;
   }
 
+  playerLookup(id: number) {
+    return this.database.object('players/' + 'id');
+  }
+
 }
