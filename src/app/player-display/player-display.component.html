@@ -3,7 +3,7 @@
     {{myPlayer.jerseyNum}}
   </div>
   <div class="headshot">
-    <img class="clipped" src="{{myPlayer.imgURL}}">
+    <img class="clipped" src="{{myPlayer.profileImgURL}}">
   </div>
   <div>
     {{myPlayer.name.split(' ')[0]}}
@@ -12,6 +12,9 @@
     {{myPlayer.name.split(' ')[1]}}
   </div>
   <div>
-    <span class="bold"> {{myPlayer.height.split('-')[0]}}</span> ft <span class="bold">{{myPlayer.height.split('-')[1]}}</span> in
+    <span class="bold"> {{myPlayer.height.split('-')[0]}}</span> ft <span class="bold">{{myPlayer.height.split('-')[1]}}</span> in | <span class="bold">{{myPlayer.weight}}</span> lbs
+  </div>
+  <div>
+    <img class="team-thumb" src="{{myPlayer.teamImgURL}}">
   </div>
 </div>

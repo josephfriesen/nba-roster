@@ -1,0 +1,13 @@
+.player-display-panel {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
+}
+
+.player {
+  display: inline-grid;
+  grid-row: span 1;
+  grid-column: span 1;
+  max-width: 100px;
+}

@@ -9,6 +9,7 @@ import { SearchPanelComponent } from './search-panel/search-panel.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { NameFilterPipe } from './name-filter.pipe';
 import { PlayerDisplayComponent } from './player-display/player-display.component';
+import { AllPlayersComponent } from './all-players/all-players.component';
 
 declare var require: any;
 
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     SearchPanelComponent,
     PlayerListComponent,
     NameFilterPipe,
-    PlayerDisplayComponent
+    PlayerDisplayComponent,
+    AllPlayersComponent
   ],
   imports: [
     BrowserModule,

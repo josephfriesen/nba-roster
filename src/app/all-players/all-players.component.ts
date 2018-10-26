@@ -1,19 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Player } from './models/player.model';
-import { PlayersService } from './players.service';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { Player } from '../models/player.model';
+import { PlayersService } from '../players.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'all-players',
+  templateUrl: './all-players.component.html',
+  styleUrls: ['./all-players.component.css'],
   providers: [PlayersService]
 })
-export class AppComponent {
-  title = 'app';
 
-  log(arg): void {
-    console.log(arg);
-  }
+export class AllPlayersComponent implements OnInit {
 
   roster: Player[] = [];
 
@@ -38,7 +34,6 @@ export class AppComponent {
   }
 
   ngOnInit() {
-
   }
 
 }

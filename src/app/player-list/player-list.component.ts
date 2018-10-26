@@ -18,24 +18,6 @@ export class PlayerListComponent implements OnInit {
 
   ngOnInit() {
 
-    // this.playersService.getPlayers()
-    //   .subscribe(array => {
-    //     array.forEach(data => {
-    //       const player = new Player(
-    //         data[12],
-    //         data[3],
-    //         data[13],
-    //         data[0],
-    //         data[14],
-    //         data[4],
-    //         data[5],
-    //         data[6],
-    //         data[7]
-    //       );
-    //       this.roster.push(player);
-    //     });
-    //   });
-
   }
 
   @Input() filterByName: string;
