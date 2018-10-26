@@ -15,6 +15,7 @@ export class PlayerStatsComponent implements OnInit {
 
   index: number
   player: Player;
+  stats;
 
   constructor(private playersService: PlayersService, private location: Location, private route: ActivatedRoute) { }
 
@@ -35,7 +36,6 @@ export class PlayerStatsComponent implements OnInit {
           data[this.index][6],
           data[this.index][7]
         );
-        console.log(this.player);
       });
   }
 
