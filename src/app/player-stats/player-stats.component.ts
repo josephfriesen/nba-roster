@@ -4,6 +4,7 @@ import { PlayersService } from '../players.service';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { FirebaseObjectObservable } from 'angularfire2/database';
+import StatsQuery from './statsQuery';
 
 @Component({
   selector: 'player-stats',
