@@ -1,6 +1,3 @@
-* {
-  padding: 0;
-}
 
 .header {
   display: flex;
@@ -15,4 +12,27 @@
   justify-content: center;
   width: 100%;
   background-color: lightgrey;
+}
+
+.header-text-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.header-text-box div {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.team-thumb {
+  width: 40px;
+  height: 40px;
+}
+
+.team-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
