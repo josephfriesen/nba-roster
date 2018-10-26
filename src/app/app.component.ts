@@ -9,12 +9,6 @@ import { PlayersService } from './players.service';
   providers: [PlayersService]
 })
 export class AppComponent {
-  title = 'app';
-
-  log(arg): void {
-    console.log(arg);
-  }
-
   roster: Player[] = [];
 
   constructor(private playersService: PlayersService) {

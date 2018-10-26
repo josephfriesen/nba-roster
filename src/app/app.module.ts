@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { SearchPanelComponent } from './search-panel/search-panel.component';
 import { PlayerListComponent } from './player-list/player-list.component';
@@ -33,7 +34,8 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
