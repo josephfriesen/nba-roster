@@ -3,6 +3,53 @@
     <search-panel [roster]="roster"></search-panel>
   </div>
   <div class="player-display-panel">
-    <player-display [myPlayer]="giannis"></player-display>
+    <div class="player" *ngFor="let player of roster">
+      <player-display [myPlayer]="player"></player-display>
+    </div>
+    <!-- <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div>
+    <div class="player">
+      <player-display [myPlayer]="giannis"></player-display>
+    </div> -->
   </div>
 </div>
