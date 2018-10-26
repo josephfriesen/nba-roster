@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Player } from './models/player.model';
-import { roster } from './models/ROSTER';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -17,7 +16,7 @@ export class PlayersService {
   }
 
   playerLookup(index: number) {
-    return this.database.object('players', index);
+    return this.database.object('/players/', index);
   }
 
 }
