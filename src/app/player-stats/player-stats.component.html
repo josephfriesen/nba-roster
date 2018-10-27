@@ -1,22 +1,25 @@
 <div class="header">
   <div class="header-image">
-    <img src="{{player.profileImgURL}}">
+    <img src="{{player?.profileImgURL}}">
   </div>
   <div class="header-text-box">
-    <div>{{player.name}}</div> <div> | </div>
-    <div>#{{player.jerseyNum}}</div> <div> | </div>
-    <div>{{player.teamAbr}}</div> <div> | </div>
-    <div>{{player.pos}}</div>
+    <div>{{player?.name}}</div>
+    <div>#{{player?.jerseyNum}}</div>
+    <div>{{player?.teamAbr}}</div>
+    <div>{{player?.pos}}</div>
   </div>
 </div>
 
 <div class="season-stats-container">
-  <h3>{{player.name}}'s {{stats[1]}} Season Stats</h3>
-  <p class="team-line">Team: <img class="team-thumb" src="{{player.teamImgURL}}"> {{stats[4]}}</p>
-  <p>Games: {{stats[6]}}</p>
-  <p>Games Started: {{stats[7]}}</p>
-  <p>Minutes Per Game: {{stats[8]}}</p>
-  <p>FGM/FGA/FG%: {{stats[9].toFixed(1)}} / {{stats[10].toFixed(1)}} / {{stats[11] | percent:'2.1-1'}}</p>
-</div>
+  <h3>{{player?.name}}'s {{stats[1]}} Season Stats</h3>
+  <p class="team-line"><img class="team-thumb" src="{{player?.teamImgURL}}"> {{stats[4]}}</p>
+  <div class="stats-table">
+    <div class="grid-row categories">
+      (stat categories will go here)
+    </div>
 
-{{id}}
+    <div class="grid-row values">
+      (stat values will go here)
+    </div>
+  </div>
+</div>
