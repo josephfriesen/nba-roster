@@ -2,7 +2,7 @@
   <div class="player-list-item full-list-item" *ngFor="let player of roster">
     <div class="item-container">
       <div>
-        <a (click)="goToPlayer(player)">{{player.name}}</a>
+        <a routerLink="/player/{{player.ID}}" (click)="goToPlayer(player)">{{player.name}}</a>
       </div>
       <div>
         <img class="team-thumb" src="{{player.teamImgURL}}">

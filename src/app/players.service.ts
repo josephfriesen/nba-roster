@@ -15,8 +15,14 @@ export class PlayersService {
     return this.players;
   }
 
-  playerLookup(index: number) {
-    return this.database.object('/players/', index);
+  playerLookup(id: number) {
+    this.getPlayers().subscribe(players => {
+      players.forEach(player => {
+        if (player[12] === id) {
+          return player;
+        }
+      })
+    })
   }
 
 }

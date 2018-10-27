@@ -16,7 +16,6 @@ export class AppComponent {
       .subscribe(array => {
         array.forEach((data,idx) => {
           const player = new Player(
-            idx,
             data[12],
             data[3],
             data[13],

@@ -16,15 +16,14 @@ export class PlayerListComponent implements OnInit {
   constructor(private router: Router, private playersService: PlayersService) { }
 
   @Input() roster: Player[];
+  @Input() filterByName: string;
 
   ngOnInit() {
 
   }
 
-  @Input() filterByName: string;
-
   goToPlayer(selectedPlayer: Player) {
-    this.router.navigate(['player', selectedPlayer.index]);
+    this.router.navigate(['player', selectedPlayer.ID]);
   }
 
 }
